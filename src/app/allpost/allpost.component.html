@@ -1,0 +1,32 @@
+<div class="container-fluid " style="background-color: #4d5ce2;">
+    <p class="display-5 text-white text-center py-3"> All  Posts</p>
+</div>
+
+<div class="spinner-grow" role="status" *ngIf="isloading">
+    <span class="visually-hidden"></span>
+  </div>
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">User ID</th>
+     
+        <th scope="col">PostID</th>
+        <th scope="col"> Title </th>
+        <th scope="col"> Body  </th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let post of  allpost">
+       
+        <td> {{ post.userId}}  </td>
+        <td> {{ post.id }} </td>
+        <td>  {{ post.title }} </td>
+        <td>  {{ post.body  }} </td>
+       
+      </tr>
+   
+  
+    </tbody>
+  </table>

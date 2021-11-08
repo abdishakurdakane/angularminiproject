@@ -1,1 +1,32 @@
-<p>singleuser works!</p>
+
+<div class="container-fluid " style="background-color: #4d5ce2;">
+    <p class="display-5 text-white text-center py-3">Single User Posts</p>
+</div>
+<div class="spinner-grow" role="status" *ngIf="isloading">
+    <span class="visually-hidden"></span>
+  </div>
+
+
+
+<div class="container my-5">
+  
+   <div class="row justify-content-center">
+      
+  
+       <div class="col-md-6 col-lg-4 " *ngFor="let post of singleUserpost">
+        <!-- Bootstrap 5 card box -->
+        <div class="card-box">
+    <div class="card-thumbnail">
+                <!-- <img src="images/office-image-one.jpg" class="img-fluid" alt=""> -->
+            </div>
+            <h3> Title: {{ post.title }} </h3>
+            <h3> userID:{{ post.userId }}  </h3>
+            <h3> postID:  {{ post.id }}  </h3>
+            <h3>  </h3>
+            <p class="text-secondary">  {{post.body}}  </p>
+          
+            </div>
+    </div>
+
+
+</div>  

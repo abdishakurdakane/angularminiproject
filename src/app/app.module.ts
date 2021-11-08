@@ -11,6 +11,8 @@ import { UsersComponent } from './users/users.component';
 import { SingleuserComponent } from './singleuser/singleuser.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AllpostComponent } from './allpost/allpost.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     UsersComponent,
     SingleuserComponent,
+    
+    AllpostComponent,
 
    
   ],
